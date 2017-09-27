@@ -30,10 +30,10 @@ public class Principal {
 		            break;
 		        case 4:
 		            aux=0;
-		            JOptionPane.showMessageDialog(null, "AtÈ logo!");
+		            JOptionPane.showMessageDialog(null, "At√© logo!");
 		            break;
 		        default:
-		            JOptionPane.showMessageDialog(null, "Esta n„o È uma opÁ„o v·lida!");
+		            JOptionPane.showMessageDialog(null, "Esta n√£o √© uma op√ß√£o v√°lida!");
 			}
 		}
 	}
