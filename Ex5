@@ -1,0 +1,79 @@
+----------------------------MAIN: 
+
+import javax.swing.JOptionPane; 
+
+public class TesteLoja {
+
+	public static void main(String[] args) {
+			Loja loja = new Loja();
+			
+			loja.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite o código do produto:")));
+			loja.setDescricao(JOptionPane.showInputDialog("Digite a descrição do produto:"));
+			loja.setQtde(Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de produtos:")));	
+			
+			JOptionPane.showMessageDialog(null, "Código do produto: " + loja.getCodigo() + 
+												"\nDescrição do produto: " + loja.getDescricao() +
+												"\nQuantidade de produtos: " + loja.getQtde());
+	}
+
+}
+
+----------------------------NÃO MAIN:
+
+import javax.swing.JOptionPane; 
+
+
+/* Encapsular:
+public class Loja {
+	int codigo;
+	String descricao;
+	int qtde;
+}*/
+
+public class Loja {
+	private int codigo;
+	private String descricao;
+	private int qtde;
+
+	
+public Loja() {
+	
+}
+
+public Loja(int codigo, String descricao, int qtde) {
+	this.codigo = codigo;
+	this.descricao = descricao;
+	this.qtde = qtde;
+}
+
+public String toString() {
+	return "Codigo: " + codigo +
+			"\nDescrição: " + descricao +
+			"\nQuantidade: " + qtde;
+}
+
+public int getCodigo() {
+	return codigo;
+}
+
+public void setCodigo(int codigo) {
+	this.codigo = codigo;
+}
+
+public String getDescricao() {
+	return descricao;
+}
+
+public void setDescricao(String descricao) {
+	this.descricao = descricao;
+}
+
+public int getQtde() {
+	return qtde;
+}
+
+public void setQtde(int qtde) {
+	this.qtde = qtde;
+}
+
+}
